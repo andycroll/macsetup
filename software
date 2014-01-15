@@ -1,0 +1,32 @@
+echoe "[Install] Brew Cask"
+brew tap phinze/cask
+brew install brew-cask
+
+echoe "[Install] Brew Cask Betas"
+brew tap caskroom/versions
+
+echo "[Install] QuickLook Plugins"
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
+
+echo "[Install] Sublime"
+brew cask install sublime-text3
+
+echo "[Install] GitX (L)"
+brew cask install gitx-l
+
+echo "[Install] Flux"
+brew cask install flux
+
+echo "[Install] Dropbox"
+brew cask install dropbox
+
+echo "[Install] VLC"
+brew cask install vlc
+
+echo "### Safari Extensions"
+
+echo "[Safari] Detox"
+open http://shauninman.com/archive/2012/01/19/detox
+
+echo "[Safari] Ghostery"
+open http://www.ghostery.com/

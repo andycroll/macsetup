@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+echo "[Config] Checking for SSH key, generating one if it doesn't exist ..."
+  [[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa
+
+echo "[Config] Copying public key to clipboard. Paste it into your Github account"
+  [[ -f ~/.ssh/id_rsa.pub ]] && cat ~/.ssh/id_rsa.pub | pbcopy
+  open https://github.com/account/ssh
+
+echo "[Install] Homebrew"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+  brew update
+
+echo "[Install] Git"
+  brew install git
+
+echo "[Install] Postgres"
+  brew install postgres --no-python
+  initdb /usr/local/var/postgres
+
+echo "[Install] Ack"
+  brew install ack
+
+echo "[Install] ImageMagick"
+  brew install imagemagick --disable-openmp
+
+echo "[Install] QT"
+  brew install qt
+
+echo "[Install] Ctags" # used by sublime
+  brew install ctags
+
+echo "[User Input] Run Extra Scripts"
+echo "bash < <(curl -s https://raw.github.com/andycroll/macsetup/master/ruby)"
+echo "bash < <(curl -s https://raw.github.com/andycroll/macsetup/master/heroku)"
+echo "bash < <(curl -s https://raw.github.com/andycroll/macsetup/master/software)"
+
+echo "[User Input] Install dotfiles"
+  open 'http://github.com/andycroll/dotfiles'
+
+echo "[User Input] Run Dropbox linking once synced"
+echo "bash < <(curl -s https://raw.github.com/andycroll/macsetup/master/dropbox)"
