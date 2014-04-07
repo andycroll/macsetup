@@ -8,8 +8,12 @@ brew tap caskroom/versions
 echo "[Install] QuickLook Plugins"
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
 
-echo "[Install] Sublime"
+echo "[Install] Sublime (open atom.io)"
 brew cask install sublime-text3
+open http://atom.io
+
+echo "[Install] Skype"
+brew cask install skype
 
 echo "[Install] GitX (L)"
 brew cask install gitx-l
