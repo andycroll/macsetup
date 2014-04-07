@@ -14,6 +14,12 @@ brew cask install sublime-text3
 echo "[Install] GitX (L)"
 brew cask install gitx-l
 
+echo "[Install] Bartender"
+brew cask install bartender
+
+echo "[Install] nvAlt"
+brew cask install nvalt
+
 echo "[Install] Flux"
 brew cask install flux
 
