@@ -1,8 +1,8 @@
-echoe "[Install] Brew Cask"
+echo "[Install] Brew Cask"
 brew tap phinze/cask
 brew install brew-cask
 
-echoe "[Install] Brew Cask Betas"
+echo "[Install] Brew Cask Betas"
 brew tap caskroom/versions
 
 echo "[Install] QuickLook Plugins"
