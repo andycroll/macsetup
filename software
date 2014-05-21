@@ -5,6 +5,10 @@ brew install brew-cask
 echo "[Install] Brew Cask Betas"
 brew tap caskroom/versions
 
+echo "[Install] rcm"
+brew tap thoughtbot/formulae
+brew install rcm
+
 echo "[Install] QuickLook Plugins"
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
 
