@@ -1,46 +1,43 @@
-echo "[Install] Brew Cask"
-brew tap phinze/cask
-brew install brew-cask
-
-echo "[Install] Brew Cask Betas"
-brew tap caskroom/versions
-
-echo "[Install] rcm"
-brew tap thoughtbot/formulae
-brew install rcm
-
-echo "[Install] QuickLook Plugins"
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
-
-echo "[Install] Sublime (open atom.io)"
-brew cask install sublime-text3
-open http://atom.io
-
-echo "[Install] Skype"
+echo "[Install] Comms"
 brew cask install skype
+brew cask install zoom
 
-echo "[Install] GitX (L)"
-brew cask install gitx-l
-
-echo "[Install] Bartender"
+echo "[Install] Menu Items"
 brew cask install bartender
+brew cask install istat-menus
+brew cask install daisydisk
+brew cask install freedom
+brew cask install itsycal
+brew cask install muzzle
 
-echo "[Install] nvAlt"
-brew cask install nvalt
+brew cask install google-chrome
+brew cask install firefox
 
-echo "[Install] Flux"
-brew cask install flux
+brew install tldr
+brew install github/gh/gh
 
-echo "[Install] Dropbox"
-brew cask install dropbox
+echo "[Install] Dev Tools"
+brew cask install atom
+brew cask install dash
+brew cask install rownaj-gitx
+brew cask install trailer
 
-echo "[Install] VLC"
+echo "[Install] Games & Video"
 brew cask install vlc
+brew cask install beamer
+brew cask install epic-games
+brew cask install steam
 
-echo "### Safari Extensions"
+brew cask install microblog
+brew cask install netnewswire
+brew cask install screenflow
+brew cask install sketch
+brew cask install tad
 
-echo "[Safari] Detox"
-open http://shauninman.com/archive/2012/01/19/detox
+brew cask install basecamp
+brew cask install homebrew/cask-drivers/sonos
 
-echo "[Safari] Ghostery"
-open http://www.ghostery.com/
+brew cask install webponize
+brew cask install imageoptim
+
+brew cask install authy

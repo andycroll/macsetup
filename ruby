@@ -2,23 +2,18 @@ echo "[Install] chruby"
   brew install chruby
   brew install ruby-install
 
-echo "[Install] Ruby 2.1.0 stable"
-  ruby-install ruby 2.1
+echo "[Install] Ruby stable"
+  ruby-install ruby
 
-echo "[Config] Ruby 2.1.0 set as default"
-  chruby ruby 2.1
-
-echo "[Install] Ruby 1.9.3 stable"
-  ruby-install ruby 1.9
-
-echo "[Install] gem bundler"
-  gem install bundler --no-rdoc --no-ri
-
-echo "[Config] bundler runs in parallel"
-  bundle config --global jobs `expr $number_of_cores - 1`
+echo '2.7.0' > ~/.ruby-version
 
 echo "[Install] gem rails"
-  gem install rails --no-rdoc --no-ri
+  gem install rails
 
-echo "[Install] gem powder"
-  gem install powder --no-rdoc --no-ri
+# Config Sidekiq gemserver
+
+brew tap heroku/brew && brew install heroku
+
+brew install yarn
+brew cask install ngrok
+open 'https://dashboard.ngrok.com/get-started'
